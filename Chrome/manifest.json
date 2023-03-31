@@ -1,0 +1,18 @@
+{
+    "name": "Anywhere Bing AI",
+    "version": "1.0",
+    "description": "Anywhere You Can chat Bing AI 모든 브라우저에서 Bing AI가 가능합니다.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+		"storage",
+		"<all_urls>"
+    ],
+    "icons": {
+        "48": "icon-48.png"
+    },
+    "background": {
+        "scripts": ["UA.js"]
+    },
+    "manifest_version": 2
+}
