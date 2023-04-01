@@ -14,4 +14,4 @@ You can chat Bing Ai in any browser<br>
 
 ## Download
 - Chrome - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/releases/download/Release/Chrome.zip'>File</a>
-- Firefox - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/releases/download/Release/Firefox.zip'>file</a> - <a href='https://addons.mozilla.org/ko/firefox/addon/anywhere-bing-ai/'>Add on(V1.0.0)</a>
+- Firefox - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/releases/download/Release/Firefox.zip'>file</a> - <a href='https://addons.mozilla.org/ko/firefox/addon/anywhere-bing-ai/'>Add on</a>
