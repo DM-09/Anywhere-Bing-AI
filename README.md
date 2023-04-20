@@ -1,4 +1,4 @@
-# Bing AI for Any browser
+# AnyWhere Bing AI
 You can chat Bing Ai in any browser<br>
 어느 브라우저나 Bing Ai를 쓸 수 있습니다.
 
