@@ -14,7 +14,6 @@
                     
                 }
             }
-
             return {
                 requestHeaders: details.requestHeaders
             };
@@ -25,3 +24,16 @@
         ["blocking", "requestHeaders"]
     );
 })();
+
+chrome.webNavigation.onCompleted.addListener(function(details) {
+	var Mode = localStorage.getItem('Mode');
+	if (Mode == '1') {
+	  chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/dark.js';document.body.appendChild(script);`
+      });
+	} else {
+		chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/light.js';document.body.appendChild(script);`
+      });
+	}
+});
