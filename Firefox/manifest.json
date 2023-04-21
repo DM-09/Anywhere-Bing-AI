@@ -1,12 +1,15 @@
 {
     "name": "Anywhere Bing AI",
-    "version": "0.0",
+    "version": "1.0.3",
     "description": "Anywhere You Can chat Bing AI 모든 브라우저에서 Bing AI가 가능합니다.",
     "permissions": [
         "webRequest",
         "webRequestBlocking",
 		"storage",
-		"<all_urls>"
+		"<all_urls>",
+		"declarativeNetRequestWithHostAccess",
+		"storage",
+		"webNavigation"
     ],
     "icons": {
         "48": "icon-48.png"
@@ -14,5 +17,17 @@
     "background": {
         "scripts": ["UA.js"]
     },
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "1",
+        "enabled": true,
+        "path": "header.json"
+      }
+    ]
+  },
     "manifest_version": 2
 }
