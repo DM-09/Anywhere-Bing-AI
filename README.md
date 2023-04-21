@@ -6,8 +6,6 @@ You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
 #### Chrome
 <img width="50%" alt="Chrome" src="https://user-images.githubusercontent.com/112751504/229110849-226ad849-2003-4253-a563-3302f76f536b.png"><img width="50%" alt="Chrome Dark" src="https://user-images.githubusercontent.com/112751504/233588343-7741954d-208b-4ec4-b1c0-283300623add.png">
 
-<br>
-
 #### Firefox
 <img width="50%" alt="firefox" src="https://user-images.githubusercontent.com/112751504/229110859-9982d0c8-3b15-43ec-8eb0-294ff8a0ec7e.png"><img width="50%" alt="firefox dark" src="https://user-images.githubusercontent.com/112751504/233589263-c0df0e24-612e-43dc-bcd6-734c89005346.png">
 
