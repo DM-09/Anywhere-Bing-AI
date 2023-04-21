@@ -1,5 +1,6 @@
 # AnyWhere Bing AI
 You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
+
 어느 브라우저나 Bing AI를 쓸 수 있습니다. 그리고 다크모드도 사용 가능합니다.
 
 ## ScreenShot
