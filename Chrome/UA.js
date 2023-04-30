@@ -10,8 +10,7 @@
 					} else {
 						// Other
 						val.value = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54';
-					}
-                    
+					} 
                 }
             }
             return {
@@ -26,7 +25,26 @@
 })();
 
 chrome.webNavigation.onCompleted.addListener(function(details) {
+  if(details.url.indexOf('bing.com') != -1) {
 	var Mode = localStorage.getItem('Mode');
+	var Len = localStorage.getItem('Len');
+	
+	if (Len != null) {
+	  chrome.tabs.executeScript(details.tabId, {
+        code: `Value = setInterval(function() {
+  var n = 0
+  try{
+	var firstElement = document.querySelector(".cib-serp-main").shadowRoot;
+	var secondElement = firstElement.querySelector("#cib-action-bar-main").shadowRoot;
+	var textArea = secondElement.querySelector("textarea");
+	textArea.maxLength = ${Len};
+	n = 1
+	}catch(e){}
+  if (n != 0) { clearInterval(Value) }
+}, 200);`
+      });
+	}
+	
 	if (Mode == '1') {
 	  chrome.tabs.executeScript(details.tabId, {
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/dark.js';document.body.appendChild(script);`
@@ -36,4 +54,5 @@ chrome.webNavigation.onCompleted.addListener(function(details) {
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/light.js';document.body.appendChild(script);`
       });
 	}
+  }
 });
