@@ -10,6 +10,13 @@ You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
 #### Firefox
 <img width="50%" alt="firefox" src="https://user-images.githubusercontent.com/112751504/229110859-9982d0c8-3b15-43ec-8eb0-294ff8a0ec7e.png"><img width="50%" alt="firefox dark" src="https://user-images.githubusercontent.com/112751504/233589263-c0df0e24-612e-43dc-bcd6-734c89005346.png">
 
+## Guide 가이드
+<img width="93" alt="firefox_icon" src="https://user-images.githubusercontent.com/112751504/235331970-2287b658-00ca-4c07-8f0e-c0d53246851c.png">
+
+- Speech bubble(말풍선): Open Chat. 채팅을 엽니다.
+- Sun/moon(해/달): Change Dark/Light Mode. 다크/라이트 모드로 바꿉니다.
+- Ruler(자): Set max lenght. 최대 길이를 설정합니다.
+
 ## Install Guide 설치 가이드
 - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/blob/main/Guide-Kor.md'>한국어</a>
 - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/blob/main/Guide-Eng.md'>English</a>
