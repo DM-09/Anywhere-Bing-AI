@@ -1,5 +1,5 @@
 (_ => {
-    browser.webRequest.onBeforeSendHeaders.addListener(
+    chrome.webRequest.onBeforeSendHeaders.addListener(
         details => {
             for (let i = 0; i < details.requestHeaders.length; ++i) {
                 if (details.requestHeaders[i].name === 'User-Agent') {
@@ -24,13 +24,14 @@
     );
 })();
 
-browser.webNavigation.onCompleted.addListener(function(details) {
+chrome.webNavigation.onCompleted.addListener(function(details) {
   if(details.url.indexOf('bing.com') != -1) {
 	var Mode = localStorage.getItem('Mode');
 	var Len = localStorage.getItem('Len');
-	
+	var pan = localStorage.getItem('pan');
+
 	if (Len != null) {
-	  browser.tabs.executeScript(details.tabId, {
+	  chrome.tabs.executeScript(details.tabId, {
         code: `Value = setInterval(function() {
   var n = 0
   try{
@@ -46,12 +47,22 @@ browser.webNavigation.onCompleted.addListener(function(details) {
 	}
 	
 	if (Mode == '1') {
-	  browser.tabs.executeScript(details.tabId, {
+	  chrome.tabs.executeScript(details.tabId, {
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/dark.js';document.body.appendChild(script);`
       });
 	} else {
-		browser.tabs.executeScript(details.tabId, {
+		chrome.tabs.executeScript(details.tabId, {
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/light.js';document.body.appendChild(script);`
+      });
+	}
+	
+	if (pan == '1') {
+	  chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/hide.js';document.body.appendChild(script);`
+      });
+	} else {
+		chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/show.js';document.body.appendChild(script);`
       });
 	}
   }
