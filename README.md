@@ -17,6 +17,11 @@ You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
 - Sun/moon(해/달): Change Dark/Light Mode. 다크/라이트 모드로 바꿉니다.
 - Ruler(자): Set max lenght. 최대 길이를 설정합니다.
 
+<img width="35" alt="update" src="https://github.com/DM-09/Anywhere-Bing-AI/assets/112751504/32807aec-9c02-464a-94da-2f143d418991">: 업데이트 가능. Able to update
+<br>
+<img width="29" alt="check" src="https://github.com/DM-09/Anywhere-Bing-AI/assets/112751504/892b8585-c829-4567-9cfa-3472ce496921">: 최신버전. newest version
+
+
 ## Install Guide 설치 가이드
 - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/blob/main/Guide-Kor.md'>한국어</a>
 - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/blob/main/Guide-Eng.md'>English</a>
