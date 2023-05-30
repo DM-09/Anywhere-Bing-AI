@@ -1,6 +1,6 @@
 {
     "name": "Anywhere Bing AI",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Anywhere You Can chat Bing AI 모든 브라우저에서 Bing AI가 가능합니다.",
     "permissions": [
         "webRequest",
