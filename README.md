@@ -23,5 +23,5 @@ You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
 
 
 ## Download 다운로드
-- Chrome - <a href='https://github.com/DM-09/Anywhere-Bing-AI/releases/download/1.0.5ver/Chrome.zip'>File</a>
-- Firefox - <a href='https://github.com/DM-09/Anywhere-Bing-AI/releases/download/1.0.5ver/Firefox.zip'>file</a> - <a href='https://addons.mozilla.org/en/firefox/addon/anywhere-bing-ai/'>Add on</a>
+- Chrome - <a href='https://github.com/DM-09/Anywhere-Bing-AI/releases/download/1.0.5-ver/Chrome.zip'>File</a>
+- Firefox - <a href='https://github.com/DM-09/Anywhere-Bing-AI/releases/download/1.0.5-ver/Firefox.zip'>file</a> - <a href='https://addons.mozilla.org/en/firefox/addon/anywhere-bing-ai/'>Add on</a>
