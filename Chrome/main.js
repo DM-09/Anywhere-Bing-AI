@@ -28,6 +28,29 @@ document.getElementById('len').addEventListener('click', function() {
 	localStorage.setItem('Len', inp);
 });
 
+var ver = '1.0.5'
+let gets;
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://happydm09.github.io/Page/test/abi_ver.json', true);
+xhr.responseType = 'json';
+xhr.send();
+
+xhr.onload = function() {
+  const re = xhr.response;
+  gets = re.ver
+	console.log(gets)
+	if (ver != gets) {
+		document.getElementById('update').setAttribute('class', 'bi bi-arrow-up-circle')
+	}
+}
+
+document.getElementById('update').addEventListener('click', function() {
+	  chrome.tabs.create({
+        url: 'https://github.com/DM-09/Anywhere-Bing-AI/releases'	
+    })
+});
+
 window.onload = function(){
     var el = document.getElementById('mode')
 	var get = localStorage.getItem('Mode');
