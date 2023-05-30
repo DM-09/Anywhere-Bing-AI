@@ -7,7 +7,7 @@ document.getElementById('Go').addEventListener('click', function() {
 document.getElementById('mode').addEventListener('click', function() {
 	var el = document.getElementById('mode')
 	var get = localStorage.getItem('Mode');
-	if (get == 1) {
+	if (get == '1') {
 	  el.setAttribute('class', 'bi bi-sun')
 	  chrome.tabs.executeScript({
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/light.js';document.body.appendChild(script);`
@@ -28,7 +28,7 @@ document.getElementById('len').addEventListener('click', function() {
 	localStorage.setItem('Len', inp);
 });
 
-var ver = '1.0.5'
+var ver = '1.0.6'
 let gets;
 
 const xhr = new XMLHttpRequest();
@@ -51,13 +51,33 @@ document.getElementById('update').addEventListener('click', function() {
     })
 });
 
+document.getElementById('panel').addEventListener('click', function() {
+	var el = document.getElementById('panel')
+	var get = localStorage.getItem('pan');
+	
+	if (get == '1') {
+	  el.setAttribute('class', 'bi bi-clipboard2-check')
+	  chrome.tabs.executeScript({
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/show.js';document.body.appendChild(script);`
+      });
+	  localStorage.setItem('pan', '0');
+	} else {
+	 el.setAttribute('class', 'bi bi-clipboard2-x')
+     chrome.tabs.executeScript({
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/hide.js';document.body.appendChild(script);`
+     });
+	 localStorage.setItem('pan', '1');
+	}
+});
+
 window.onload = function(){
     var el = document.getElementById('mode')
 	var get = localStorage.getItem('Mode');
 	
-	if (get == 1) {
-		el.setAttribute('class', 'bi bi-moon-stars')
-	} else {
-		el.setAttribute('class', 'bi bi-sun')
-	}
+	var el2 = document.getElementById('panel')
+	var get2 = localStorage.getItem('pan');
+	
+	if (get == '1') { el.setAttribute('class', 'bi bi-moon-stars') } else { el.setAttribute('class', 'bi bi-sun') }
+	if (get2 == '0') { el2.setAttribute('class', 'bi bi-clipboard2-check') } else { el2.setAttribute('class', 'bi bi-clipboard2-x') }
+
 }
