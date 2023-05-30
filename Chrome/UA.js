@@ -28,7 +28,8 @@ chrome.webNavigation.onCompleted.addListener(function(details) {
   if(details.url.indexOf('bing.com') != -1) {
 	var Mode = localStorage.getItem('Mode');
 	var Len = localStorage.getItem('Len');
-	
+	var pan = localStorage.getItem('pan');
+
 	if (Len != null) {
 	  chrome.tabs.executeScript(details.tabId, {
         code: `Value = setInterval(function() {
@@ -52,6 +53,16 @@ chrome.webNavigation.onCompleted.addListener(function(details) {
 	} else {
 		chrome.tabs.executeScript(details.tabId, {
         code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/light.js';document.body.appendChild(script);`
+      });
+	}
+	
+	if (pan == '1') {
+	  chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/hide.js';document.body.appendChild(script);`
+      });
+	} else {
+		chrome.tabs.executeScript(details.tabId, {
+        code: `var script = document.createElement('script'); script.src = 'https://happydm09.github.io/Page/test/show.js';document.body.appendChild(script);`
       });
 	}
   }
