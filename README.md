@@ -20,7 +20,7 @@ You can chat Bing AI in any browser. and Can use to <b>dark mode</b>!!<br>
 <img width="35" alt="update" src="https://github.com/DM-09/Anywhere-Bing-AI/assets/112751504/32807aec-9c02-464a-94da-2f143d418991">: 업데이트 가능. Able to update
 <br>
 <img width="29" alt="check" src="https://github.com/DM-09/Anywhere-Bing-AI/assets/112751504/892b8585-c829-4567-9cfa-3472ce496921">: 최신버전. newest version
-
+<br> (누르면 다운로드 페이지로 이동.  Click to go to download page.)
 
 ## Install Guide 설치 가이드
 - <a href='https://github.com/DM-09/Bing-AI-for-Any-browser/blob/main/Guide-Kor.md'>한국어</a>
